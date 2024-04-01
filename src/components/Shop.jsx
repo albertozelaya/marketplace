@@ -1,11 +1,11 @@
-import { data } from "./App";
+import { blogs } from "./App";
 
 const Shop = () => {
   return (
     <div>
-      {data.map((data) => (
+      {blogs.map((blog) => (
         <>
-          <div key={data.name}>
+          <div key={blog.name}>
             <div className="mx-auto md:px-0 w-full py-[50px]">
               <div className="max-w-[1240px] mx-auo ">
                 <div className="drop-shadow-xl grid grid-cols-1 md:grid-cols-2 rounded-lg bg-BG_LIGHT">
@@ -23,7 +23,7 @@ const Shop = () => {
                       <h1 className=" text-xl ms-2 mt-2">Granos de Café añejeados desde 1961, Banhcafe</h1>
                       <h2 className="ms-5 mt-1">de Moises Vendido por Edmundo</h2>
                       <div className="flex justify-between px-4">
-                        <img className="h-36 -mt-14" src={data.stars} alt="stars" />
+                        <img className="h-36 -mt-14" src={blog.stars} alt="stars" />
                         <p className="pe-4 pt-1">(Sin reviews verificados)</p>
                       </div>
                       <div className="-mt-11 pe-3 ">
